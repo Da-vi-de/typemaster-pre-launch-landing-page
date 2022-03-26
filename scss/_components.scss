@@ -1,0 +1,87 @@
+.button {
+    text-transform: uppercase;
+    padding: .7rem;
+    border: transparent;
+    border-radius: 8px;
+    color: $color-dark-blue;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button_1 {
+    background-color: $color-light-grey;
+
+    &:hover {
+        background-color: $color-dark-blue ;
+        color: $color-white ;
+    }
+}
+
+.button_2 {
+    background-color: $color-orange;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-salmon;
+    }
+}
+
+.keyboard-img,
+.phone-keyboard,
+.glass-keyboard {
+    border-radius: 20px;
+}
+
+.keyboard-img {
+    position: relative;
+    right: -4%;
+}
+
+.wireless > div:first-child  {
+    background-color: $color-orange;
+    border-radius: 20px;
+}
+
+.wireless > div:first-child img {
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+}
+
+.wireless__images--phone-keyboard {
+    position: absolute;
+    left: -10%;
+    grid-area: 1/2;
+    grid-row: 1/2;
+}
+
+.phone-keyboard {
+    width: 8rem;
+}
+
+.glass-keyboard {
+    width: 13.75rem;
+    position: absolute;
+    right: .5rem;
+}
+
+.wireless__images--glass-keyboard {
+   grid-area: 2/2;
+   grid-row: 1/2
+}
+
+.wireless__content {
+    grid-area: -1/-1;
+    grid-row: 2/2;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.features__content-icon {
+    display: grid;
+    place-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 14px;
+    background-color: $color-orange;
+}
+
