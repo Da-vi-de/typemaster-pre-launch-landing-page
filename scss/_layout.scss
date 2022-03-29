@@ -52,3 +52,39 @@
     margin-top: 6rem;
     margin-bottom: 3rem;
 }
+
+
+@media all and (min-width: 37.5rem) {
+
+    .intro,
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wireless__content {
+        display: flex;
+        padding-top: 4rem;
+        gap: 2rem;
+    }
+
+    .features__content {
+        align-items: flex-start;
+        text-align: left;
+    }
+ }
+ 
+ @media all and (min-width: 48rem) {
+
+
+    .wireless__content {
+        padding-top: 8rem;
+    }
+ }
+
+ 
+@media all and (min-width: 56.25rem) {
+
+    .wireless__content {
+        padding-top: 10rem;
+    }
+}

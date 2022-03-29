@@ -35,3 +35,15 @@
     text-align: center;
     font-weight: 500;
 }
+
+@media all and (min-width: 37.5rem) {
+
+    .wireless__content-heading,
+    .wireless__content-paragraph {
+        text-align: left;
+    }
+
+    .wireless__content-paragraph {
+        margin-top: 0;
+    }
+}
