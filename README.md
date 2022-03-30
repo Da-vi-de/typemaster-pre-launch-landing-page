@@ -2,6 +2,9 @@
 
 This is a solution to the [Typemaster pre-launch landing page challenge on Frontend Mentor](). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+![Design preview for the Typemaster pre-launch landing page
+ coding challenge](./preview.jpg)
+
 ## Table of contents
 
 - [Frontend Mentor - Typemaster pre-launch landing page solution](#frontend-mentor---typemaster-pre-launch-landing-page-solution)
