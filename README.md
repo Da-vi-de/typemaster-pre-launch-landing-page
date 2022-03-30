@@ -40,6 +40,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- SCSS
 - Mobile-first workflow
 - BEM methodology
 
