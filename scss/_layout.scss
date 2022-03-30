@@ -1,0 +1,129 @@
+.container {
+    max-width: min(90%);
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.4rem;
+    margin-bottom: 4rem;
+}
+
+.intro {
+    display: grid;
+    margin-bottom: 2rem;
+}
+
+.intro__position {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.intro__image {
+    margin-top: 4rem;
+    margin-right: -1rem;
+}
+
+.wireless {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.features {
+    display: grid;
+    margin-top: 6rem;
+    gap: 2rem;
+}
+
+.features__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.footer {
+    position: sticky;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+
+@media all and (min-width: 37.5rem) {
+
+    .intro,
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wireless__content {
+        display: flex;
+        padding-top: 4rem;
+        gap: 2rem;
+    }
+
+    .features__content {
+        align-items: flex-start;
+        text-align: left;
+    }
+ }
+ 
+ @media all and (min-width: 48rem) {
+
+
+    .wireless__content {
+        padding-top: 8rem;
+    }
+ }
+
+ 
+@media all and (min-width: 56.25rem) {
+
+    .wireless__content {
+        padding-top: 10rem;
+    }
+}
+
+@media all and (min-width: 75rem) {
+
+    .container {
+        max-width: 80%;
+    }
+
+    .wireless {
+	    grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: unset;
+       
+    }
+
+    .features {
+        margin-top: 8rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media all and (min-width: 87.5rem) {
+
+    .wireless__content {
+        padding-left: 5rem;
+        padding-right: 2rem;
+    }
+}
+
+@media all and (min-width: 93.75rem) {
+
+    .wireless__content {
+        padding: 8rem 4rem 0 7rem;
+       
+    }
+
+    .features {
+        gap: 4.2rem;
+    }
+}
