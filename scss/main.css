@@ -197,6 +197,40 @@ select {
   }
 }
 
+@media all and (min-width: 75rem) {
+  .container {
+    max-width: 80%;
+  }
+  .wireless {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: unset;
+        grid-template-rows: unset;
+  }
+  .features {
+    margin-top: 8rem;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media all and (min-width: 87.5rem) {
+  .wireless__content {
+    padding-left: 5rem;
+    padding-right: 2rem;
+  }
+}
+
+@media all and (min-width: 93.75rem) {
+  .wireless__content {
+    padding: 8rem 4rem 0 7rem;
+  }
+  .features {
+    gap: 4.2rem;
+  }
+}
+
 .headings {
   text-transform: uppercase;
   font-weight: 900;
@@ -215,7 +249,7 @@ select {
   line-height: 1;
 }
 
-.intro__paragraph {
+.intro__span {
   margin-left: 1rem;
   text-transform: uppercase;
   font-size: 1rem;
@@ -245,6 +279,12 @@ select {
   }
 }
 
+@media all and (min-width: 87.5rem) {
+  .intro__paragraph {
+    padding-right: 12.5rem;
+  }
+}
+
 .button {
   text-transform: uppercase;
   padding: .7rem;
@@ -253,6 +293,11 @@ select {
   color: #162542;
   font-weight: 700;
   cursor: pointer;
+}
+
+.button:focus-visible {
+  outline: none;
+  border: 2px dotted #162542;
 }
 
 .button_1 {
@@ -275,7 +320,8 @@ select {
 
 .keyboard-img,
 .phone-keyboard,
-.glass-keyboard {
+.glass-keyboard,
+.pattern {
   border-radius: 20px;
 }
 
@@ -284,17 +330,9 @@ select {
   right: -4%;
 }
 
-.wireless > div:first-child {
+.wireless__images--phone-keyboard {
   background-color: #f16718;
   border-radius: 20px;
-}
-
-.wireless > div:first-child img {
-  mix-blend-mode: multiply;
-  opacity: 0.75;
-}
-
-.wireless__images--phone-keyboard {
   position: absolute;
   left: -10%;
   -ms-grid-row: 1;
@@ -307,6 +345,8 @@ select {
 
 .phone-keyboard {
   width: 8rem;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
 }
 
 .glass-keyboard {
@@ -352,6 +392,11 @@ select {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  @supports (-moz-appearance: none) {
+    .keyboard-img {
+      top: 8%;
+    }
+  }
   .wireless__images--phone-keyboard {
     left: 5%;
   }
@@ -388,6 +433,94 @@ select {
   }
   .glass-keyboard {
     width: 30rem;
+  }
+}
+
+@media all and (min-width: 75rem) {
+  .keyboard-img {
+    width: 21.875rem;
+    height: 18.563rem;
+    top: 20%;
+  }
+  @supports (-moz-appearance: none) {
+    .keyboard-img {
+      top: 12%;
+    }
+  }
+  .pattern {
+    background: url(../assets/shared/pattern-square.svg) no-repeat center center/cover;
+    width: 14rem;
+    height: 11rem;
+  }
+  .pattern__desktop-square-keyboard {
+    position: absolute;
+    right: -10%;
+  }
+  .pattern__desktop-square-wireless {
+    position: absolute;
+    left: -9.8%;
+    bottom: -46%;
+  }
+  @supports (-moz-appearance: none) {
+    .pattern__desktop-square-wireless {
+      left: -10%;
+      bottom: 21%;
+    }
+  }
+  .wireless__images--phone-keyboard {
+    left: 10%;
+  }
+  .phone-keyboard {
+    width: 10rem;
+    height: 25rem;
+  }
+  .glass-keyboard {
+    width: 22rem;
+    height: 25rem;
+    right: 33rem;
+  }
+  .wireless__content {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: 3/3;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+}
+
+@media all and (min-width: 87.5rem) {
+  .keyboard-img {
+    width: 33.875rem;
+    height: 22.563rem;
+    left: 51%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .phone-keyboard {
+    width: 12rem;
+  }
+  .glass-keyboard {
+    width: 27rem;
+  }
+}
+
+@media all and (min-width: 93.75rem) {
+  .keyboard-img {
+    top: 13%;
+    left: 54%;
+  }
+  .phone-keyboard {
+    width: 14rem;
+  }
+  .glass-keyboard {
+    width: 29rem;
+  }
+  .pattern__desktop-square-keyboard {
+    top: 14%;
+  }
+  .pattern__desktop-square-wireless {
+    bottom: -19%;
   }
 }
 /*# sourceMappingURL=main.css.map */

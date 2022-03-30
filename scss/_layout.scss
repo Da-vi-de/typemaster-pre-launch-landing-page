@@ -88,3 +88,42 @@
         padding-top: 10rem;
     }
 }
+
+@media all and (min-width: 75rem) {
+
+    .container {
+        max-width: 80%;
+    }
+
+    .wireless {
+	    grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: unset;
+       
+    }
+
+    .features {
+        margin-top: 8rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media all and (min-width: 87.5rem) {
+
+    .wireless__content {
+        padding-left: 5rem;
+        padding-right: 2rem;
+    }
+}
+
+@media all and (min-width: 93.75rem) {
+
+    .wireless__content {
+        padding: 8rem 4rem 0 7rem;
+       
+    }
+
+    .features {
+        gap: 4.2rem;
+    }
+}

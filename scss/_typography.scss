@@ -16,7 +16,7 @@
     line-height: 1;
 }
 
-.intro__paragraph {
+.intro__span {
     margin-left: 1rem;
     text-transform: uppercase;
     font-size: $font-size-1;
@@ -45,5 +45,12 @@
 
     .wireless__content-paragraph {
         margin-top: 0;
+    }
+}
+
+@media all and (min-width: 87.5rem) {
+
+    .intro__paragraph {
+        padding-right: 12.5rem;
     }
 }
